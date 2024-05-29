@@ -1,10 +1,10 @@
 package se.inyat.myenterpriseapp.controller;
 
-import com.myenterprise.model.User;
-import com.myenterprise.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+import se.inyat.myenterpriseapp.model.User;
+import se.inyat.myenterpriseapp.service.UserService;
 
 import java.util.List;
 

@@ -1,4 +1,4 @@
-package se.inyat.myenterpriseapp.config;
+/**package se.inyat.myenterpriseapp.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -21,3 +21,4 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         return new BCryptPasswordEncoder();
     }
 }
+*/

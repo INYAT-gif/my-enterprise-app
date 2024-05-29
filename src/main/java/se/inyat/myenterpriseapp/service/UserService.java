@@ -1,9 +1,9 @@
 package se.inyat.myenterpriseapp.service;
 
-import com.myenterprise.model.User;
-import com.myenterprise.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import se.inyat.myenterpriseapp.model.User;
+import se.inyat.myenterpriseapp.repository.UserRepository;
 
 import java.util.List;
 import java.util.Optional;
@@ -28,8 +28,8 @@ public class UserService {
 
     public Optional<User> updateUser(Long id, User user) {
         return userRepository.findById(id).map(existingUser -> {
-            existingUser.setName(user.getName());
-            existingUser.setEmail(user.getEmail());
+            //existingUser.setName(user.getName());
+            //existingUser.setEmail(user.getEmail());
             return userRepository.save(existingUser);
         });
     }
